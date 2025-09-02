@@ -1,4 +1,4 @@
-# RoketGPT
+#  <p align="center">**RoketGPT v11.2** </p>
 
 A compact, special terminology focused, character-level **decoder-only Transformer** + **RAG-lite (due to requests)** hybrid (rule-based parsing + semantic/keyword retrieval). Everything is written from scratch; trained in two stages: **Causal LM** → **Instruction Fine-Tuning**. Ships with chat memory, logging, and export features via a CLI.
 
@@ -9,6 +9,7 @@ A compact, special terminology focused, character-level **decoder-only Transform
 ## Table of Contents
 
 - [Some Examples and Features](#some-examples-and-features)
+- [Update](#update)
 - [Highlights](#highlights)
 - [Repository Structure](#repository-structure)
 - [Installation](#installation)
