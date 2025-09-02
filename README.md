@@ -4,10 +4,11 @@ A compact, special terminology focused, character-level **decoder-only Transform
 
 > **Privacy Note:** This project contains **NO** organization names or confidential information. The entire dataset was produced from scratch by the developer (term–definition lists and attribute files). **No corporate or proprietary data was used.**
 
----
+----
 
 ## Table of Contents
 
+- [Some Examples and Features](#some-examples-and-features)
 - [Highlights](#highlights)
 - [Repository Structure](#repository-structure)
 - [Installation](#installation)
@@ -25,20 +26,20 @@ A compact, special terminology focused, character-level **decoder-only Transform
 - [Appendices](#appendices)
 
 ---
-<!-- Header Gallery (2×4) -->
+## Some Examples and Features
 <p align="center">
-  <!-- 1. satır -->
-  <img src="assets/header-1.png" alt="RoketGPT header 1" width="120" />
-  <img src="assets/header-2.png" alt="RoketGPT header 2" width="120" />
-  <img src="assets/header-3.png" alt="RoketGPT header 3" width="120" />
-  <img src="assets/header-4.png" alt="RoketGPT header 4" width="120" />
+  
+  <img src="assets/header-1.png" alt="RoketGPT header 1" width="330" />
+  <img src="assets/header-2.png" alt="RoketGPT header 2" width="330" />
+  <img src="assets/header-3.png" alt="RoketGPT header 3" width="330" />
   <br/>
-  <!-- 2. satır -->
-  <img src="assets/header-5.png" alt="RoketGPT header 5" width="120" />
-  <img src="assets/header-6.png" alt="RoketGPT header 6" width="120" />
-  <img src="assets/header-7.png" alt="RoketGPT header 7" width="120" />
-  <img src="assets/header-8.png" alt="RoketGPT header 8" width="120" />
+  <img src="assets/header-4.png" alt="RoketGPT header 4" width="330" />
+  <img src="assets/header-5.png" alt="RoketGPT header 5" width="330" />
+  <img src="assets/header-6.png" alt="RoketGPT header 6" width="330" />
+  
 </p>
+
+---
 
 ## Highlights
 
@@ -69,7 +70,14 @@ RoketGPT/
 │  │  └─ test.py      
 │  └─ cli/
 │     └─ main.py
-│   
+├─ assets/
+│  ├─ header-1.png
+│  ├─ header-2.png
+│  ├─ header-3.png
+│  ├─ header-4.png
+│  ├─ header-5.png
+│  ├─ header-6.png
+│
 └─ chat_history.jsonl
 ```
 ---
