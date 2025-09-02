@@ -1,4 +1,4 @@
-#  <p align="center">**RoketGPT v11.2** </p>
+#  <p align="center">**🚀 RoketGPT v11.2** </p>
 
 A compact, special terminology focused, character-level **decoder-only Transformer** + **RAG-lite (due to requests)** hybrid (rule-based parsing + semantic/keyword retrieval). Everything is written from scratch; trained in two stages: **Causal LM** → **Instruction Fine-Tuning**. Ships with chat memory, logging, and export features via a CLI.
 
@@ -45,27 +45,27 @@ A compact, special terminology focused, character-level **decoder-only Transform
 ---
 ## Update
 
-- 🔥 **Update 1**: `2025/07/22`: Fixed Unicode tokenizer edge cases (Turkish diacritics, NFC/NFKC normalization); made randomness fully deterministic across dataloaders/augmenters; prevented a rare CLI crash when `--kb` is missing; added regression tests for BOS/EOS handling.
+- 🚀  **Update 1**: `2025/07/22`: Fixed Unicode tokenizer edge cases (Turkish diacritics, NFC/NFKC normalization); made randomness fully deterministic across dataloaders/augmenters; prevented a rare CLI crash when `--kb` is missing; added regression tests for BOS/EOS handling.
 
-- 🔥 **Update 2**: `2025/07/23`: Upgraded RAG-lite with alias expansion via edit-distance + transliteration; added hybrid scoring (BM25-like keyword score + cosine similarity) with tie-breakers; introduced on-disk embedding cache and lazy loading; `build_kb` now infers categories when none are provided.
+- 🚀  **Update 2**: `2025/07/23`: Upgraded RAG-lite with alias expansion via edit-distance + transliteration; added hybrid scoring (BM25-like keyword score + cosine similarity) with tie-breakers; introduced on-disk embedding cache and lazy loading; `build_kb` now infers categories when none are provided.
 
-- 🔥 **Update 3**: `2025/07/25`: Training pipeline: enabled gradient accumulation and global-norm clipping; optional cosine-restart scheduler; selective weight decay (no decay on LayerNorm/embeddings); exponential moving average (EMA) of weights; checkpoint naming includes step/val-loss for easy best-model discovery.
+- 🚀  **Update 3**: `2025/07/25`: Training pipeline: enabled gradient accumulation and global-norm clipping; optional cosine-restart scheduler; selective weight decay (no decay on LayerNorm/embeddings); exponential moving average (EMA) of weights; checkpoint naming includes step/val-loss for easy best-model discovery.
 
-- 🔥 **Update 4**: `2025/07/28`: Memory system overhauled with semantic summarization + LRU eviction; deduplicates cross-session snippets via MinHash; fixed attention mask corner cases in eval; micro-optimizations on matmul path and tensor allocations.
+- 🚀  **Update 4**: `2025/07/28`: Memory system overhauled with semantic summarization + LRU eviction; deduplicates cross-session snippets via MinHash; fixed attention mask corner cases in eval; micro-optimizations on matmul path and tensor allocations.
 
-- 🔥 **Update 5**: `2025/08/01`: CLI exports now robust to UTF-8/newlines; `--clear-memory` uses atomic writes + fsync; added structured JSON logging + log rotation; introduced `--profile` flag for per-token latency histograms and throughput stats.
+- 🚀  **Update 5**: `2025/08/01`: CLI exports now robust to UTF-8/newlines; `--clear-memory` uses atomic writes + fsync; added structured JSON logging + log rotation; introduced `--profile` flag for per-token latency histograms and throughput stats.
 
-- 🔥 **Update 6**: `2025/08/01`: Resolved double BOS/EOS injection; defaulted to NFC normalization in preprocessing; clarified escaping for custom symbols; experimental block-sparse attention (config-gated) for long prompts without increasing peak memory.
+- 🚀  **Update 6**: `2025/08/01`: Resolved double BOS/EOS injection; defaulted to NFC normalization in preprocessing; clarified escaping for custom symbols; experimental block-sparse attention (config-gated) for long prompts without increasing peak memory.
 
-- 🔥 **Update 7**: `2025/08/05`: Retrieval adds stop-word filtering and vector L2 normalization; introduced Reciprocal Rank Fusion (RRF) and Maximal Marginal Relevance (MMR) for diverse contexts; exposed `--topk`, similarity thresholds, and fusion weights via config/CLI.
+- 🚀  **Update 7**: `2025/08/05`: Retrieval adds stop-word filtering and vector L2 normalization; introduced Reciprocal Rank Fusion (RRF) and Maximal Marginal Relevance (MMR) for diverse contexts; exposed `--topk`, similarity thresholds, and fusion weights via config/CLI.
 
-- 🔥 **Update 8**: `2025/08/12`: Added property-based tests (Hypothesis) for masking/retrieval invariants; stabilized latency harness; CI matrix for Python 3.12 with cache; code coverage gating; pinned reproducible dependency set for `requirements*.txt`.
+- 🚀  **Update 8**: `2025/08/12`: Added property-based tests (Hypothesis) for masking/retrieval invariants; stabilized latency harness; CI matrix for Python 3.12 with cache; code coverage gating; pinned reproducible dependency set for `requirements*.txt`.
 
-- 🔥 **Update 9**: `2025/08/15`: Expanded docs (“Quick Start”, “CLI Usage”); synced `train.yaml` with current defaults; added sample data/outputs; enforced style via pre-commit (Ruff/Black); type-checked core modules with MyPy; Pydantic validation for configs.
+- 🚀  **Update 9**: `2025/08/15`: Expanded docs (“Quick Start”, “CLI Usage”); synced `train.yaml` with current defaults; added sample data/outputs; enforced style via pre-commit (Ruff/Black); type-checked core modules with MyPy; Pydantic validation for configs.
 
-- 🔥 **Update 10**: `2025/08/28`: Inference speedups: KV-cache reuse across steps, optional `torch.compile` graph capture, weight-only int8 path (activation fp16/bf16) behind a flag; streaming generation in CLI with live token timings; reduced temp allocations in attention → noticeably higher tokens/sec on CPU.
+- 🚀  **Update 10**: `2025/08/28`: Inference speedups: KV-cache reuse across steps, optional `torch.compile` graph capture, weight-only int8 path (activation fp16/bf16) behind a flag; streaming generation in CLI with live token timings; reduced temp allocations in attention → noticeably higher tokens/sec on CPU.
 
-- 🔥 **Update 11**: `2025/09/02`: Alias disambiguation via confidence-weighted voting across matchers; fixed Windows file-lock on memory file; graceful SIGINT/SIGTERM shutdown; introduced `roketgpt.__version__` and semantic versioning; added basic prompt-injection guards for retrieved context; reproducibility manifest (seeds, git SHA, config) emitted per run.
+- 🚀  **Update 11**: `2025/09/02`: Alias disambiguation via confidence-weighted voting across matchers; fixed Windows file-lock on memory file; graceful SIGINT/SIGTERM shutdown; introduced `roketgpt.__version__` and semantic versioning; added basic prompt-injection guards for retrieved context; reproducibility manifest (seeds, git SHA, config) emitted per run.
 
 ---
 
