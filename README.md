@@ -366,3 +366,9 @@ mem.append(query, out.text)
 
 **Impact Summary:** With a lean architecture plus focused retrieval, RoketGPT achieves high accuracy (EM 97.4%) while keeping the pipeline transparent and reproducible; in-the-loop improvements help produce reliable answers in practice.
 
+---
+
+## License
+
+This project is released under the **MIT License**.  
+© 2025 Dogan Ege BULTE
