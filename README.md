@@ -14,9 +14,9 @@ A compact, special terminology focused, character-level **decoder-only Transform
 | <img src="assets/header-1.png" alt="RoketGPT header 1" width="350" /> | <img src="assets/header-2.png" alt="RoketGPT header 2" width="350" /> | <img src="assets/header-3.png" alt="RoketGPT header 3" width="350" /> |
 
 
-  | Enabling generative AI to learn unknowns despite limited training data | Some commands | Understanding missile types and characteristics|
-|:---:|:---:|:---:|
-| <img src="assets/header-4.png" alt="RoketGPT header 4" width="350" /> | <img src="assets/header-5.png" alt="RoketGPT header 5" width="350" /> | <img src="assets/header-6.png" alt="RoketGPT header 6" width="350" /> |
+  | Enabling generative AI to learn unknowns despite limited training data | Some commands | Understanding missile types and characteristics | Understanding terms from previous conversations|
+|:---:|:---:|:---:|:---:|
+| <img src="assets/header-4.png" alt="RoketGPT header 4" width="350" /> | <img src="assets/header-5.png" alt="RoketGPT header 5" width="350" /> | <img src="assets/header-6.png" alt="RoketGPT header 6" width="350" /> | <img src="assets/header-7.png" alt="RoketGPT header 7" width="350" /> |
   
 ---
 
